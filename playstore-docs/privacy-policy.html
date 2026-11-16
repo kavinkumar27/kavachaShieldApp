@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Kavach Shield</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #16a34a;
+      --danger: #dc2626;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #334155;
+      --heading: #0f172a;
+      --border: #e2e8f0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    }
+    .badge {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0284c7;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: var(--heading);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      color: #64748b;
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    h2 {
+      font-size: 1.35rem;
+      color: var(--heading);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+    p, ul {
+      margin-bottom: 16px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .highlight-card {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    .highlight-card h3 {
+      color: #166534;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    .warning-card {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    .warning-card h3 {
+      color: #991b1b;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.9em;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: #64748b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">Google Play Data Safety Compliant</div>
+    <h1>Privacy Policy for Kavach Shield</h1>
+    <div class="meta">
+      <strong>Application ID:</strong> <code>com.kavach.scamshield</code> &bull; 
+      <strong>Effective Date:</strong> November 16, 2026 &bull; 
+      <strong>Governing Law:</strong> Digital Personal Data Protection Act (DPDPA), 2023 (India)
+    </div>
+
+    <div class="highlight-card">
+      <h3>🛡️ Zero-Cloud Privacy Guarantee Summary</h3>
+      <p>
+        <strong>Kavach Shield processes all message and link analysis 100% locally on your device in volatile memory (RAM).</strong>
+        We do NOT store your personal SMS or WhatsApp messages on your device storage, nor do we ever upload or transmit your message text, sender details, or browsing records to external cloud servers.
+      </p>
+    </div>
+
+    <h2>1. Information We Do NOT Collect</h2>
+    <ul>
+      <li><strong>No SMS or Messaging Logs:</strong> We never log or record the contents of your text messages or messaging chats.</li>
+      <li><strong>No Contact Lists:</strong> We do not request or access your device contacts address book.</li>
+      <li><strong>No Location Data:</strong> We do not track or collect your GPS coordinates or network location.</li>
+      <li><strong>No Device Storage Access:</strong> We do not read your photos, documents, media, or personal device storage.</li>
+    </ul>
+
+    <h2>2. Android NotificationListenerService & Permission Policy</h2>
+    <p>
+      Kavach Shield includes a specialized background service (<code>KavachNotificationService</code>) utilizing Android's <code>NotificationListenerService</code> API.
+    </p>
+    <ul>
+      <li><strong>Purpose:</strong> To proactively protect users from phishing links, bank impersonation scams, and malicious APK attachments in real-time as notifications arrive.</li>
+      <li><strong>Scope Limitation:</strong> The service is restricted strictly to notifications from designated messaging apps (e.g., WhatsApp, Google Messages, SMS). All other applications are discarded immediately.</li>
+      <li><strong>In-Memory Processing:</strong> When an eligible notification is received, only the notification title and body text are examined in volatile RAM by the local scam detection engine.</li>
+      <li><strong>Zero Persistence:</strong> Once the security assessment is displayed to you, the raw notification text is immediately garbage-collected from RAM and is never written to disk or sent across the network.</li>
+      <li><strong>NO READ_SMS Permission:</strong> Kavach Shield explicitly DOES NOT declare or use <code>android.permission.READ_SMS</code> or <code>android.permission.RECEIVE_SMS</code>.</li>
+    </ul>
+
+    <h2>3. Data Stored Locally on Your Device</h2>
+    <p>The following data is saved exclusively in your device's private sandboxed <code>localStorage</code> and never leaves your device:</p>
+    <ul>
+      <li><strong>Emergency Contacts:</strong> Up to 2 phone numbers you manually enter in Settings to enable the 1-tap WhatsApp alert shortcut.</li>
+      <li><strong>Aggregated Counters:</strong> Anonymized counts of daily scans and blocked threats (e.g., "Scanned Today: 5").</li>
+      <li><strong>Recent Security Alerts:</strong> A short rolling list of recent threat classifications for your review within the app. You can clear this history anytime via the "Clear History" button.</li>
+      <li><strong>Subscription Status:</strong> A boolean flag indicating whether Kavach Pro is activated.</li>
+      <li><strong>Language Preference:</strong> English or Tamil (தமிழ்).</li>
+    </ul>
+
+    <h2>4. Third-Party Services & Monetization</h2>
+    <p>Kavach Shield utilizes trusted third-party SDKs for application maintenance and monetization:</p>
+    <ul>
+      <li><strong>Google AdMob:</strong> For free users, banner and interstitial advertisements are delivered via Google AdMob. AdMob may process device identifiers (such as the Google Advertising ID) and approximate network diagnostics strictly in accordance with Google's Privacy Policy. Subscribing to Kavach Pro immediately terminates all AdMob ad requests.</li>
+      <li><strong>Google Play In-App Billing:</strong> Subscription payments (Kavach Pro monthly and yearly) are processed securely through Google Play. Kavach Shield does not collect, see, or store your credit card, UPI PIN, or banking credentials.</li>
+      <li><strong>Google Safe Browsing API (Optional):</strong> If configured by the user, extracted URLs may be queried against Google's Safe Browsing API v4 to detect known malware and social-engineering domains. Only candidate URLs are sent; message text and user identities are never transmitted.</li>
+    </ul>
+
+    <h2>5. Security & Encryption</h2>
+    <p>
+      Because our application operates on a zero-backend architecture, your data remains contained within Android's protected application sandbox. We do not maintain any central servers or external databases storing user records.
+    </p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>
+      Kavach Shield does not knowingly collect any personally identifiable information from children under the age of 13.
+    </p>
+
+    <h2>7. Contact and Grievance Officer</h2>
+    <p>If you have any questions or concerns regarding this Privacy Policy or Kavach Shield's privacy practices, please contact our Data Protection Officer:</p>
+    <ul>
+      <li><strong>Email:</strong> privacy@kavachshield.app</li>
+      <li><strong>Developer:</strong> Kavach Shield Security Team</li>
+      <li><strong>Physical Address:</strong> Bengaluru, Karnataka, India</li>
+    </ul>
+
+    <footer>
+      &copy; 2026 Kavach Shield. All rights reserved. Built with privacy-by-design principles.
+    </footer>
+  </div>
+</body>
+</html>

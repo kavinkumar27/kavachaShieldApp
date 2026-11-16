@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Kavach Shield</string>
+    <string name="title_activity_main">Kavach Shield</string>
+    <string name="package_name">com.kavach.scamshield</string>
+    <string name="custom_url_scheme">com.kavach.scamshield</string>
+</resources>

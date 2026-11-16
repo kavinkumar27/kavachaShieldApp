@@ -5,6 +5,7 @@
 *Stack:* React 19 + Vite 8 + Material UI (@mui/material) + Lucide Icons + Capacitor 8 + Native Kotlin Bridge
 
 ---
+this is an Security Tool Application build by Kavin kumar
 
 ## 🌟 Key Highlights & Architecture
 
